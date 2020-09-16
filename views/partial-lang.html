@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <h1>${title}</h1>
+    <section class="lang">
+        <ul>
+        ${data.map(lang => `<li>${lang.language}: I am ${lang.status_title} at ${lang.language}!</li>`).join('')}
+        </ul>
+    </section>
+</div>
+
+

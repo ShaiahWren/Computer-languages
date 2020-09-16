@@ -1,0 +1,49 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: ;
+}
+
+
+
+body {
+    background: #428CD4;
+    color: #efefef;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+}
+
+h1 {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 8px;
+    padding-right: 200px;
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 8px;
+}
