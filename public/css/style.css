@@ -5,7 +5,7 @@ html {
     font-size: 16px;
     box-sizing: border-box;
     font-family: 'Noto Sans TC', sans-serif;
-    background-color: ;
+    background-color: #428CD4;
 }
 
 
@@ -47,3 +47,9 @@ h1 {
     text-align: left;
     padding: 8px;
 }
+
+.lang ul li {
+    list-style-type: none;
+    padding: 4px;
+}
+
