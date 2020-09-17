@@ -1,3 +1,4 @@
+const { response } = require('express');
 const db = require('./conn.js');
 
 class LangList {
@@ -13,6 +14,20 @@ class LangList {
         } catch (error) {
             return error.message;
         }
+    }
+    static async getAllStatuses() {
+
+    }
+    static async updateStatus(rank, language) {
+        try {
+            const response =  await db.result(`UPDATE languages SET rank = $1 WHERE language = $2`, [rank, language]);
+            return response;
+        } catch (error) {
+            console.error("ERROR:", error);
+            return error;
+        }
+   
+   
     }
 }
 

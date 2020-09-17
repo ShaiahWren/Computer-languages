@@ -15,4 +15,14 @@ router.get("/", async (req, res) => {
         }
     })
 });
+
+router.post("/", async (req, res) => {
+    console.log("req.body:", req.body);
+    const dbResponse = await langModel.updateStatus(6, "HTML");
+    console.log("database reponse: ", dbResponse);
+    res.status(200).send("OK").end();
+});
+
+
+
 module.exports = router;
